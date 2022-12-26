@@ -156,3 +156,5 @@ app.delete("/twitch/api/helix/moderation/chat", async (req, res) => {
 
 app.listen(8080);
 console.log("Server listening on port 8080");
+
+module.exports = app;

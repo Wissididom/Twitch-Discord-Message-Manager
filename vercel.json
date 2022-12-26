@@ -1,6 +1,22 @@
 {
-	"version": 2,
-	"functions": {
-		"index.js": {}
-	}
+	"headers": [
+		{
+			"source": "/twitch/api/helix/users",
+			"headers": [
+				{
+					"key": "Access-Control-Allow-Methods",
+					"value": "GET"
+				}
+			]
+		},
+		{
+			"source": "/twitch/api/helix/moderation/chat",
+			"headers": [
+				{
+					"key": "Access-Control-Allow-Methods",
+					"value": "POST"
+				}
+			]
+		}
+	]
 }
