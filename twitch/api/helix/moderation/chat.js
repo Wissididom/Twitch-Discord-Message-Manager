@@ -1,4 +1,4 @@
-export default async (req, res) => {
+module.exports = async (req, res) => {
 	let response = await fetch(``);
 }
 app.get("/twitch/api/helix/moderation/chat", async (req, res) => {

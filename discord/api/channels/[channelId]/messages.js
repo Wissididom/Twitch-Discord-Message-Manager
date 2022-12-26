@@ -1,4 +1,4 @@
-export default async (req, res) => {
+module.exports = async (req, res) => {
 	let channelId = req.query.channelId;
 	let json = JSON.stringify(req.body);
 	let response = await fetch(`https://discord.com/api/v10/channels/${channelId}/messages`, {
