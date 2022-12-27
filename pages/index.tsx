@@ -6,10 +6,13 @@ import styles from '../styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+    const host = process.env.VERCEL_URL || 'http://localhost:3000';
+    const clientId = 'tqj79y9ynmjj7d48qw081bchpmttq4';
+    const url = `https://id.twitch.tv/oauth2/authorize?client_id=${clientId}&redirect_uri=${encodeURIComponent(host)}&response_type=token&scope=channel%3Amoderate+chat%3Aedit+chat%3Aread+moderator%3Amanage%3Abanned_users+moderator%3Amanage%3Achat_messages`;
     return (
         <>
             <div id="twitch_auth_link">
-                <a href="https://id.twitch.tv/oauth2/authorize?client_id=tqj79y9ynmjj7d48qw081bchpmttq4&redirect_uri=http%3A%2F%2Flocalhost%3A8080&response_type=token&scope=channel%3Amoderate+chat%3Aedit+chat%3Aread+moderator%3Amanage%3Abanned_users+moderator%3Amanage%3Achat_messages">
+                <a href={ url }>
                     Authorize with Twitch
                 </a>
             </div>
