@@ -1,0 +1,68 @@
+* {
+  font-size: x-large;
+  font-family: sans-serif;
+}
+
+.input-wrapper {
+  margin: 0.5rem;
+}
+
+input {
+  padding: 0.25rem;
+  border-radius: 5px;
+  border: 2px solid lightgray;
+  outline: none;
+  background-color: #f3f3f3;
+}
+
+input:focus-within {
+  border: 2px solid #bca9f8;
+  box-shadow: 0 0 5px #bca9f8;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.green {
+  color: darkgreen;
+}
+
+button {
+  border: none;
+  font-size: large;
+  padding: 0.5rem 0.75rem;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#connect_button {
+  background-color: #6c266c;
+}
+
+#disconnect_button {
+  background-color: #dc266c;
+}
+
+#connect_button:hover {
+  background-color: #8a408a;
+}
+
+#disconnect_button:hover {
+  background-color: #ec367c;
+}
+#connection_form_wrapper {
+  width: 50ch;
+}
+#channel_name, #discord_token, #channel_id {
+  width: 100%;
+}
+#connection_info, #buttons {
+  margin-top: 1rem;
+}
+#disconnect_button {
+  display: none;
+}
