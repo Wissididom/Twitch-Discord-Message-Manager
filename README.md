@@ -1,3 +1,9 @@
+# Archived
+
+I archieved this repository because I plan on redoing this whole project in a different language as a tool that runs on the PC itself, probably together with Streamer.Bot, SAMMI and/or Firebot.
+
+# Old README
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
